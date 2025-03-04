@@ -30,9 +30,10 @@ div {
         font-family: "Outfit", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 1.4em;   
+        font-size: 1.3em;   
         text-align: center;
         color: var(--cor03);
+        margin-bottom: 0px;
 
     }
 
@@ -40,14 +41,19 @@ div {
 
         font-family: "Outfit", sans-serif;
         font-size: 15px;
+        padding: 0px 15px;
+        padding-bottom: 20px;
         color: var(--cor02);
+        text-align: center;
     }
 }
 
 @media (min-width: 1440px) {
    
     div {
-        width: 40vh;
+        width: 35vh;
         margin-top: 100px;
     }
+
+   
 }
