@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Inter;
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+    font-family: inter_bold;
+    src: url("fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: inter regular;
+    src: url("fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: inter semibold;
+    src: url("fonts/static/Inter-SemiBold.ttf");
+}
+
+:root {
+    --cor1:rgb(197, 248, 42);
+    --cor2:hsl(0, 0%, 20%);
+    --cor3:hsl(0, 0%, 12%);
+    --cor4:hsl(0, 0%, 8%);
+
+    --fonte01:inter;
+    --fonte02:inter_bold;
+    --fonte03:inter regular;
+    --fonte04:inter semibold;
+}
+
+body {
+    background-color: var(--cor4);
+    font-size: 14px;
+    margin: 0px;
+}
+
+main {
+    background-color: var(--cor3);
+    width: 60vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px 1px 1px 1px;
+    border-radius: 10px;
+    text-align: center;
+    
+    header {
+        font-family: var(--fonte01);
+
+        img {
+            border-radius: 100px;
+            width: 30%;
+        }
+
+        h1 {
+            font-family: var(--fonte04);
+            font-size: 25px;
+            color: white;
+            
+        }
+
+        h2 {
+            color: var(--cor1);
+            font-size: 16px;
+        }
+
+        p {
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+
+    article {
+
+        div {
+            background-color: var(--cor2);
+            margin: auto;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            
+            width: 70%;
+
+            font-size: 14px;
+            border-radius: 10px;
+            
+        }
+        
+        div:hover {
+            background-color: var(--cor1);
+        }
+        
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: var(--fonte04);
+        }
+
+        
+    }
+}
+
+@media (min-width:1440px) {
+    main {
+        width: 25%;
+        margin-top: 100px;
+        article {
+            padding-bottom: 15px;
+            div {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    
+}
