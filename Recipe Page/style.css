@@ -1,0 +1,48 @@
+@font-face {
+    font-family: youngSerif;
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: outfit;
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root {
+    --font01: youngSerif;
+    --font02: outfit;
+    --cor01: hsl(30, 54%, 90%);
+    --cor02: hsl(30, 18%, 87%);
+    --cor03: hsl(30, 10%, 34%); 
+    --cor04: hsl(24, 5%, 18%); 
+    --cor05: hsl(14, 45%, 36%); 
+    --cor07: hsl(332, 51%, 32%); 
+    --cor06: hsl(330, 100%, 98%);
+}
+
+body {
+    margin: 0px;
+    img {
+        width: 100%;
+    }
+
+}
+
+header {
+
+    h1 {
+        color: var(--cor04);
+        font-size: 2.5em;
+        width: 300px;
+        margin: auto;
+    }
+
+    p {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+main {
+    background-color: var(--cor06);
+}
