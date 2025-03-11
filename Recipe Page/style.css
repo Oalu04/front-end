@@ -3,14 +3,63 @@
     src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
 }
 
+
 @font-face {
     font-family: outfit;
     src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: outfitRegular;
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfitLight;
+    src: url(assets/fonts/outfit/static/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: outfitMedium;
+    src: url(assets/fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: outfitSemiBold;
+    src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: outfitBold;
+    src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: outfitBlack;
+    src: url(assets/fonts/outfit/static/Outfit-Black.ttf);
+}
+
+@font-face {
+    font-family: outfitExBold;
+    src: url(assets/fonts/outfit/static/Outfit-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: outfitThin;
+    src: url(assets/fonts/outfit/static/Outfit-Thin.ttf);
+}
+
 :root {
     --font01: youngSerif;
     --font02: outfit;
+    --font03: outfitRegular;
+    --font04: outfitLight;
+    --font05: outfitMedium;
+    --font06: outfitSemiBold;
+    --font07: outfitBold;
+    --font08: outfitBlack;
+    --font09: outfitExBold;
+    --font10: outfitThin;
     --cor01: hsl(30, 54%, 90%);
     --cor02: hsl(30, 18%, 87%);
     --cor03: hsl(30, 10%, 34%); 
@@ -20,8 +69,11 @@
     --cor06: hsl(330, 100%, 98%);
 }
 
+
+
 body {
     margin: 0px;
+    
     img {
         width: 100%;
     }
@@ -29,20 +81,65 @@ body {
 }
 
 header {
-
+    width: 300px;
+    margin: auto;
     h1 {
+        width: 400px;
+        font-family: var(--font01);
+        font-weight: 500;
         color: var(--cor04);
         font-size: 2.5em;
-        width: 300px;
-        margin: auto;
+        margin-top: 0px;
+       margin-bottom: 25px;
     }
 
     p {
-        width: 300px;
-        margin: auto;
+        font-family: var(--font02);
+        color: var(--cor03);
+        line-height: 1.5em;
+
     }
 }
 
 main {
-    background-color: var(--cor06);
+    
+    
+    article {
+        h2 {
+            color: var(--cor05);
+        }
+        .preparation {
+            background-color: var(--cor06);
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px 30px;
+            h2 {
+                font-family: var(--font02);
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--cor07);
+                margin-top: 5px;
+            }
+
+            ul {
+                li {
+                    font-family: var(--font02);
+                    color: var(--cor03);
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                    
+                    strong {
+                        color: var(--cor03);
+                        font-weight: 700;
+                    }
+                }
+                li::marker {
+                    color: var(--cor07);
+                    
+                }
+                
+            }
+        }
+    }
 }
